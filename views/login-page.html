@@ -2,53 +2,42 @@
 <html>
     <head>
         <title>login-page</title>
-        <style sheet="text/css">
-         h1{
-                text-align: center;
-                margin-right: 25%; margin-left: 45%;
-            color: rgb(4, 69, 143);}
-            button{
-                text-align: center;
-                background-color: gray;
-            }
-            body,a,button{
-                color:rgb(4, 69, 143);
-                }
-            label{float: left;
-                margin-left: 25%;
-            }
-            ::placeholder{
-                color: rgb(4, 69, 143);
-            }
-            input,button{float: right;
-                margin-right: 40%;
-            }
-            </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-        <body>
-    
-            <center>
 
-                        <h5>Financial Paradise</h5>
+<body class="text-primary">
+       <div class="container d-flex justify-content-center">
+        <form action=" ">
+            <div class="form-group row">
+            <label class="col-sm-4" for=""></label>
+        <div class="col-sm-8"><h6>Financial Paradise</h6></div>
+    </div>
+        
 
-            <form action= "http://www.example.com/login.php">
-    
-            <label for="username">Username</label>
-            <input type="text" name='username' size="20" maxlength= "30" id="username_for_login" />
-            <br/>
-            <br/>
-            <label for="password">Password</label>
-            <input type="password" name="password" size="20" id="password_for_login" />
-            <br />
-            <br/>
-            <p><button type="submit">Login</button>  
-        
-            <p><a href="forgot-password.html">Forgot password?</a> </p> 
-            <p><a href="register.html">Register</a></p>
+ <div class="form-group row">
+    <label class="col-sm-4" for="username">Username</label>
+        <div class="col-sm-8"><input type="text" class="form-control form-control-sm border-primary" name="username" placeholder="username" id="username"  /></div>
+ </div>
+  
 
-        </form>
-            </center>
+ <div class="form-group row">
+    <label class="col-sm-4" for="password">Password</label>
+        <div class= "col-sm-8"><input type="text" class="form-control form-control-sm border-primary" name="password" placeholder="password" id="password"  /></div>
+    </div>
+
+    <div class="form-group row">
+<label class="col-sm-4">
+        <button type="button" class="btn-primary btn-sm">Login</button></label>
+       <a class="col-sm-8" href="register.html">No Account?Register</a>
+       </div>
+       
+    <a class="col-sm-" href="forgot-password.html">Forgot password?</a>
+
+    </form>
+       </div>
+</body>    
         
-        
-        </body>
 </html>

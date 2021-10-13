@@ -2,41 +2,31 @@
 <html>
     <head>
         <title>Confirm-Registration</title>
-        <style sheet="text/css">
-         h1{
-                text-align: center;
-                margin-right: 25%; margin-left: 40%;
-            color: rgb(4, 69, 143);}
-            button{
-                text-align: center;
-                background-color: gray;
-            }
-            body,a,button{
-                color:rgb(4, 69, 143);
-                text-decoration: none;
-                }
-            label{float: left;
-                margin-left: 40%;
-            }
-            ::placeholder{
-                color: rgb(4, 69, 143);
-            }
-            input,button{float: right;
-                margin-right: 40%;
-            }
-            </style>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     </head>
-    <body>
-      <center>
-         <h5>Financial Paradise</h5>
-        <form action= "http://www.example.com/login.php">
+    <body class="text-primary">
+       
+        <div class="container d-flex justify-content-center ">
+            <form action=" ">
+                <div class="form-group row">
+                <label class="col-sm-6" for=""></label>
+            <div class="col-sm-6"><h6>Financial Paradise</h6></div></div>
+
         <p>Enter the code sent to your phone number</p>
-        <label for="Code">Code</label>
-            <input type="text" name="code" size="30" id="code_for_registration" />
-            <br/>
-            <br/>
-            <button type="submit">Submit</button>
+
+        <div class="form-group row">
+            <label class="col-sm-6" for="email">Email</label>
+            <div class="col-sm-6"><input type="code" class="form-control form-control-sm border-primary" placeholder="code"id="code" /></div>
+            </div>
+        
+            <div class="d-flex justify-content-end">
+                <button type="button" class="btn-primary btn-sm">Submit</button>
+                </div>
+            
         </form>
-      </center>   
+        </div>  
     </body>
 </html>    
