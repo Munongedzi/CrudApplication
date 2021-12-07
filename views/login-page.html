@@ -6,31 +6,34 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="engine1/jquery.js"></script> 
     </head>
+   
 
 <body class="text-primary">
-       <div class="container d-flex justify-content-center">
-        <form action=" ">
+       <div class="container-lg">
+        <!-- <form action=" "> -->
             <div class="form-group row">
             <label class="col-sm-4" for=""></label>
         <div class="col-sm-8"><h6>Financial Paradise</h6></div>
     </div>
-        
+<br/>        
 
  <div class="form-group row">
     <label class="col-sm-4" for="username">Username</label>
         <div class="col-sm-8"><input type="text" class="form-control form-control-sm border-primary" name="username" placeholder="username" id="username"  /></div>
  </div>
-  
+ <br/>
 
  <div class="form-group row">
     <label class="col-sm-4" for="password">Password</label>
         <div class= "col-sm-8"><input type="text" class="form-control form-control-sm border-primary" name="password" placeholder="password" id="password"  /></div>
     </div>
+    <br/>
 
     <div class="form-group row">
 <label class="col-sm-4">
-        <button type="button" class="btn-primary btn-sm">Login</button></label>
+        <button type="button" onclick="loadDoc()" class="btn-primary btn-sm">Login</button></label>
        <a class="col-sm-8" href="register.html">No Account?Register</a>
        </div>
        
@@ -38,6 +41,37 @@
 
     </form>
        </div>
-</body>    
+       <script>
+        function loadDoc() {
+            document.querySelector("form").addEventlist
+          var xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+
+            document.getElementById('username' + id).value = 'username';
+            document.getElementById('password' + id).value = 'password';
+            
+            }
+          };
+          var jsonString = JSON.stringify(json);
+          console.log(jsonString);
+          e.preventDefault();
+          var xhttp = new XMLHttpRequest ();
+          xhttp.open("POST", "demo_post2.asp", true);
+          xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+          xhttp.send("fname=Henry&lname=Ford");
+          var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      document.getElementById("demo").innerHTML =
+      this.responseText;
+    }
+  };
+  xhttp.open("GET", "ajax_info.txt", true);
+  xhttp.send();
         
+        </script>
+         
+</body>    
+
+
 </html>
